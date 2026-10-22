@@ -54,41 +54,41 @@ export const HeroSection: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: [0.2, 0.8, 0.2, 1] }}
               whileHover={{ y: -6, transition: { duration: 0.2 } }}
-              className="relative w-full sm:w-1/3 max-w-[280px] h-[200px] sm:h-[240px] md:h-[270px] rounded-[20px] sm:rounded-[26px] border border-[#FF5A2C]/25 p-4 sm:p-5 flex flex-col justify-between shadow-[0_20px_50px_rgba(0,0,0,0.85)] backdrop-blur-md overflow-hidden text-left group"
+              className="relative w-full sm:w-1/3 max-w-[280px] h-[200px] sm:h-[240px] md:h-[270px] rounded-[20px] sm:rounded-[26px] border border-[#FF5A2C]/40 p-4 sm:p-5 flex flex-col justify-between shadow-[0_20px_50px_rgba(0,0,0,0.85)] backdrop-blur-md overflow-hidden text-left group"
             >
               {/* Image Container & Dark Overlay */}
               <div className="absolute inset-0 z-0 overflow-hidden rounded-[20px] sm:rounded-[26px]">
                 <img
                   src="./hero-images/tours.jpg"
                   alt="Transport Background"
-                  className="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#241a15]/90 via-[#161210]/85 to-[#0b0908]/95" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#241a15]/60 via-[#161210]/50 to-[#0b0908]/75" />
               </div>
 
               {/* Card Header (Overlay) */}
               <div className="relative z-10 flex items-center justify-between">
-                <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.18em] text-[#FF5A2C] uppercase">
+                <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.18em] text-[#FF5A2C] uppercase drop-shadow">
                   01 / TRANSPORT
                 </span>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#FF5A2C] animate-pulse" />
               </div>
 
               {/* Card Body Graphics (Overlay) */}
-              <div className="relative z-10 my-auto py-1 flex items-center justify-center opacity-60">
-                <svg viewBox="0 0 120 120" className="w-10 sm:w-14 h-10 sm:h-14 stroke-white/35 fill-none">
+              <div className="relative z-10 my-auto py-1 flex items-center justify-center opacity-70">
+                <svg viewBox="0 0 120 120" className="w-10 sm:w-14 h-10 sm:h-14 stroke-white/50 fill-none drop-shadow">
                   <circle cx="60" cy="60" r="48" strokeDasharray="3 3" strokeWidth="1" />
-                  <circle cx="60" cy="60" r="30" strokeWidth="1" stroke="#FF5A2C" strokeOpacity="0.5" />
+                  <circle cx="60" cy="60" r="30" strokeWidth="1" stroke="#FF5A2C" strokeOpacity="0.7" />
                   <circle cx="60" cy="60" r="6" fill="#FF5A2C" />
                 </svg>
               </div>
 
               {/* Card Footer Info (Overlay) */}
-              <div className="relative z-10 border-t border-white/[0.08] pt-2">
-                <div className="text-[10px] sm:text-[12px] font-bold text-white/95">
+              <div className="relative z-10 border-t border-white/20 pt-2 backdrop-blur-[2px]">
+                <div className="text-[10px] sm:text-[12px] font-bold text-white drop-shadow">
                   PRIVATE <span className="text-[#FF5A2C]">TRANSPORT</span>
                 </div>
-                <div className="text-[8px] sm:text-[9px] text-white/45 uppercase tracking-wider mt-0.5">
+                <div className="text-[8px] sm:text-[9px] text-white/70 uppercase tracking-wider mt-0.5 font-medium">
                   JKIA • SGR • Coastal
                 </div>
               </div>
@@ -100,48 +100,48 @@ export const HeroSection: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
               whileHover={{ y: -6, transition: { duration: 0.2 } }}
-              className="relative w-full sm:w-1/3 max-w-[280px] h-[200px] sm:h-[240px] md:h-[270px] rounded-[20px] sm:rounded-[26px] border border-white/20 p-4 sm:p-5 flex flex-col justify-between shadow-[0_25px_60px_rgba(0,0,0,0.9)] backdrop-blur-xl overflow-hidden text-left group"
+              className="relative w-full sm:w-1/3 max-w-[280px] h-[200px] sm:h-[240px] md:h-[270px] rounded-[20px] sm:rounded-[26px] border border-white/30 p-4 sm:p-5 flex flex-col justify-between shadow-[0_25px_60px_rgba(0,0,0,0.9)] backdrop-blur-xl overflow-hidden text-left group"
             >
               {/* Image Container & Dark Overlay */}
               <div className="absolute inset-0 z-0 overflow-hidden rounded-[20px] sm:rounded-[26px]">
                 <img
                   src="./hero-images/stays.jpg"
                   alt="Stays Background"
-                  className="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#23242b]/90 via-[#16171d]/85 to-[#0c0d11]/95" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#23242b]/60 via-[#16171d]/50 to-[#0c0d11]/75" />
               </div>
 
               {/* Card Header (Overlay) */}
               <div className="relative z-10 flex items-center justify-between">
-                <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.18em] text-[#FF5A2C] uppercase">
+                <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.18em] text-[#FF5A2C] uppercase drop-shadow">
                   02 / STAYS
                 </span>
-                <span className="px-1.5 py-0.5 rounded-full bg-white/10 text-white text-[7px] sm:text-[8px] font-bold">
+                <span className="px-1.5 py-0.5 rounded-full bg-black/40 backdrop-blur-sm border border-white/20 text-white text-[7px] sm:text-[8px] font-bold">
                   LIVE
                 </span>
               </div>
 
               {/* Card Body Blueprint (Overlay) */}
-              <div className="relative z-10 my-auto py-1 flex items-center justify-center opacity-70">
-                <div className="w-full border border-white/15 rounded-lg p-2 bg-black/40 backdrop-blur-sm text-[8px] sm:text-[9px] font-mono text-white/60">
+              <div className="relative z-10 my-auto py-1 flex items-center justify-center opacity-80">
+                <div className="w-full border border-white/25 rounded-lg p-2 bg-black/50 backdrop-blur-sm text-[8px] sm:text-[9px] font-mono text-white/80">
                   <div className="flex justify-between">
                     <span>VILLA 04</span>
                     <span>KILIFI</span>
                   </div>
-                  <div className="mt-1 h-1 bg-white/15 rounded-full overflow-hidden">
+                  <div className="mt-1 h-1 bg-white/20 rounded-full overflow-hidden">
                     <div className="w-3/4 h-full bg-[#FF5A2C]" />
                   </div>
                 </div>
               </div>
 
               {/* Card Footer Info (Overlay) */}
-              <div className="relative z-10 border-t border-white/[0.1] pt-2">
-                <div className="text-[10px] sm:text-[12px] font-bold text-white flex justify-between">
+              <div className="relative z-10 border-t border-white/20 pt-2 backdrop-blur-[2px]">
+                <div className="text-[10px] sm:text-[12px] font-bold text-white flex justify-between drop-shadow">
                   <span>Curated Stays</span>
                   <span className="text-[#FF5A2C]">★ 4.98</span>
                 </div>
-                <div className="text-[8px] sm:text-[9px] text-white/50 uppercase tracking-wider mt-0.5">
+                <div className="text-[8px] sm:text-[9px] text-white/70 uppercase tracking-wider mt-0.5 font-medium">
                   Coast Stays
                 </div>
               </div>
@@ -153,40 +153,40 @@ export const HeroSection: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4, ease: [0.2, 0.8, 0.2, 1] }}
               whileHover={{ y: -6, transition: { duration: 0.2 } }}
-              className="relative w-full sm:w-1/3 max-w-[280px] h-[200px] sm:h-[240px] md:h-[270px] rounded-[20px] sm:rounded-[26px] border border-white/20 p-4 sm:p-5 flex flex-col justify-between shadow-[0_20px_50px_rgba(0,0,0,0.85)] backdrop-blur-md overflow-hidden text-left group"
+              className="relative w-full sm:w-1/3 max-w-[280px] h-[200px] sm:h-[240px] md:h-[270px] rounded-[20px] sm:rounded-[26px] border border-white/30 p-4 sm:p-5 flex flex-col justify-between shadow-[0_20px_50px_rgba(0,0,0,0.85)] backdrop-blur-md overflow-hidden text-left group"
             >
               {/* Image Container & Dark Overlay */}
               <div className="absolute inset-0 z-0 overflow-hidden rounded-[20px] sm:rounded-[26px]">
                 <img
                   src="./hero-images/laundry.jpg"
                   alt="Laundry Background"
-                  className="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#181d22]/90 via-[#101418]/85 to-[#080b0e]/95" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#181d22]/60 via-[#101418]/50 to-[#080b0e]/75" />
               </div>
 
               {/* Card Header (Overlay) */}
               <div className="relative z-10 flex items-center justify-between">
-                <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.18em] text-[#FF5A2C] uppercase">
+                <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.18em] text-[#FF5A2C] uppercase drop-shadow">
                   03 / LAUNDRY
                 </span>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#FF5A2C]" />
               </div>
 
               {/* Card Body Wave Graphics (Overlay) */}
-              <div className="relative z-10 my-auto py-1 flex items-center justify-center opacity-60">
-                <svg viewBox="0 0 120 120" className="w-10 sm:w-14 h-10 sm:h-14 stroke-white/35 fill-none">
+              <div className="relative z-10 my-auto py-1 flex items-center justify-center opacity-70">
+                <svg viewBox="0 0 120 120" className="w-10 sm:w-14 h-10 sm:h-14 stroke-white/50 fill-none drop-shadow">
                   <path d="M10 40 Q 35 20, 60 40 T 110 40" strokeWidth="1.5" stroke="#FF5A2C" />
                   <path d="M10 60 Q 35 40, 60 60 T 110 60" stroke="#FFFFFF" strokeWidth="1.5" />
                 </svg>
               </div>
 
               {/* Card Footer Info (Overlay) */}
-              <div className="relative z-10 border-t border-white/[0.08] pt-2">
-                <div className="text-[10px] sm:text-[12px] font-bold text-white/95">
+              <div className="relative z-10 border-t border-white/20 pt-2 backdrop-blur-[2px]">
+                <div className="text-[10px] sm:text-[12px] font-bold text-white drop-shadow">
                   Crisp Care
                 </div>
-                <div className="text-[8px] sm:text-[9px] text-white/45 uppercase tracking-wider mt-0.5">
+                <div className="text-[8px] sm:text-[9px] text-white/70 uppercase tracking-wider mt-0.5 font-medium">
                   Wash • Fold • Same-Day
                 </div>
               </div>
