@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { MessageCircle } from 'lucide-react';
 
 export const StaysSection: React.FC = () => {
   return (
@@ -34,7 +35,7 @@ export const StaysSection: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="lg:col-span-7 group relative rounded-[20px] md:rounded-[28px] bg-white border border-black/[0.06] p-3 md:p-5 overflow-hidden shadow-sm"
           >
-            {/* Visual Thumbnail Area with Empty Img Container */}
+            {/* Visual Thumbnail Area */}
             <div className="relative aspect-[1.6/1] rounded-[14px] md:rounded-[20px] overflow-hidden bg-[#0E0E0F]">
               <img
                 src="./stays/1.avif"
@@ -146,10 +147,10 @@ export const StaysSection: React.FC = () => {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full h-[46px] rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-[13px] tracking-wide inline-flex items-center justify-center gap-2.5 transition shadow-md"
+                className="w-full h-[46px] rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-[13px] tracking-wide inline-flex items-center justify-center gap-3 transition shadow-md group"
               >
                 <span>Make more inquiries on WhatsApp</span>
-                <span className="w-5 h-5 rounded-full bg-white/20 grid place-items-center text-xs">💬</span>
+                <MessageCircle className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
               </a>
             </div>
           </div>
