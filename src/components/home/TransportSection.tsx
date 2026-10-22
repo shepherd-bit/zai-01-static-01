@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { FLEET_OPTIONS, SGR_SCHEDULES } from '../../data/transport';
+import { SGR_SCHEDULES } from '../../data/transport';
 
 export const TransportSection: React.FC = () => {
   return (
@@ -76,7 +76,7 @@ export const TransportSection: React.FC = () => {
             <div className="relative mt-6 md:mt-10 h-[140px] md:h-[180px] rounded-[16px] md:rounded-[20px] bg-gradient-to-br from-[#1E1E1E] to-[#101010] border border-white/[0.06] overflow-hidden flex flex-col justify-between p-4 md:p-5">
               <div className="flex justify-between items-center">
                 <span className="text-[10px] md:text-[12px] uppercase tracking-widest opacity-60 font-bold">Starting Fare</span>
-                <span className="text-[20px] md:text-[30px] font-black tracking-tight text-[#D9FF66]">From KES 2,500</span>
+                <span className="text-[20px] md:text-[30px] font-black tracking-tight text-[#D9FF66]">From KES 1,500</span>
               </div>
               <div className="w-full">
                 <div className="h-[2px] w-full bg-white/10 rounded-full overflow-hidden">
@@ -96,10 +96,10 @@ export const TransportSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Card 2: Car Hires (Alphard / Prado) */}
+          {/* Card 2: Car Hires (Economy Fleet <1800cc) */}
           <motion.div
             whileHover={{ y: -6 }}
-            className="md:col-span-5 group relative rounded-[20px] md:rounded-[28px] bg-[#F5F1EB] text-[#0E0E0F] p-5 md:p-10 overflow-hidden"
+            className="md:col-span-5 group relative rounded-[20px] md:rounded-[28px] bg-[#F5F1EB] text-[#0E0E0F] p-5 md:p-10 overflow-hidden flex flex-col justify-between"
           >
             <div
               aria-hidden="true"
@@ -115,40 +115,31 @@ export const TransportSection: React.FC = () => {
               className="absolute -top-20 -right-20 w-[280px] h-[280px] bg-[#D9FF66] rounded-full blur-[20px] opacity-60"
             />
 
-            <div className="relative flex justify-between">
-              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#0E0E0F] text-[#F5F1EB] grid place-items-center text-[14px] md:text-[18px]">
-                ◍
+            <div>
+              <div className="relative flex justify-between">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#0E0E0F] text-[#F5F1EB] grid place-items-center text-[14px] md:text-[18px]">
+                  ◍
+                </div>
+                <span className="h-6 md:h-7 px-2 md:px-3 rounded-full bg-[#0E0E0F] text-[#F5F1EB] text-[9px] md:text-[11px] font-bold tracking-wide grid place-items-center">
+                  FROM KES 3,000
+                </span>
               </div>
-              <span className="h-6 md:h-7 px-2 md:px-3 rounded-full bg-[#0E0E0F] text-[#F5F1EB] text-[9px] md:text-[11px] font-bold tracking-wide grid place-items-center">
-                ALPHARD • PRADO
-              </span>
+
+              <h3 className="relative mt-6 md:mt-8 text-[24px] md:text-[32px] font-black tracking-[-0.04em] leading-[0.9]">
+                Car Hires
+              </h3>
+              <p className="relative mt-2 md:mt-3 text-[12px] md:text-[14px] leading-[1.6]">
+                Private rentals and tours with professional drivers. Available vehicles: <strong className="font-bold">Nissan Note, Vitz, Axio</strong> (all cars below 1800cc engine).
+              </p>
             </div>
 
-            <h3 className="relative mt-6 md:mt-8 text-[24px] md:text-[32px] font-black tracking-[-0.04em] leading-[0.9]">
-              Car Hires
-            </h3>
-            <p className="relative mt-2 md:mt-3 text-[12px] md:text-[14px] leading-[1.6]">
-              Private tours with pro drivers who know every fastest route from Kilifi to Diani,
-              Malindi, Watamu, Mombasa. Fuel inclusive options.
-            </p>
-
-            <div className="relative mt-5 md:mt-8 grid grid-cols-3 gap-1.5 md:gap-2">
-              {FLEET_OPTIONS.map((car) => (
-                <div
-                  key={car.name}
-                  className="rounded-[10px] md:rounded-[14px] bg-[#0E0E0F]/5 border border-black/5 p-2 md:p-3 flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="text-[10px] md:text-[12px] font-black leading-tight">{car.name}</div>
-                    <div className="text-[8px] md:text-[10px] opacity-60 uppercase tracking-wide">
-                      {car.seats}
-                    </div>
-                  </div>
-                  <div className="mt-2 text-[9px] md:text-[11px] font-bold text-[#FF5A2C]">
-                    {car.name.toLowerCase().includes('alphard') ? 'From KES 12,000' : car.name.toLowerCase().includes('prado') ? 'From KES 15,000' : 'From KES 10,000'}
-                  </div>
-                </div>
-              ))}
+            <div className="relative mt-6 md:mt-8 pt-4 border-t border-black/10 flex items-center justify-between">
+              <span className="text-[11px] md:text-[13px] font-black uppercase tracking-wider opacity-80">
+                Fuel-efficient & Reliable
+              </span>
+              <span className="text-[12px] md:text-[14px] font-black text-[#FF5A2C] bg-black/5 px-3 py-1 rounded-full">
+                &lt;1800cc Engine
+              </span>
             </div>
           </motion.div>
 
@@ -204,7 +195,7 @@ export const TransportSection: React.FC = () => {
               <div className="rounded-[16px] md:rounded-[20px] bg-[#0E0E0F]/60 backdrop-blur border border-white/10 p-3 md:p-5">
                 <div className="flex justify-between text-[11px] tracking-widest uppercase">
                   <span>SGR Mombasa Terminus</span>
-                  <span>• Live</span>
+                  <span>Live</span>
                 </div>
 
                 <div className="mt-3 md:mt-4 space-y-2 md:space-y-3">
