@@ -41,19 +41,19 @@ export const HeroSection: React.FC = () => {
         style={{ y: heroY, opacity: heroOpacity }}
         className="mx-auto max-w-[1400px] w-full px-2 sm:px-6 md:px-10 pt-2 sm:pt-6 pb-2 flex-1 flex flex-col items-center justify-between text-center overflow-hidden"
       >
-        {/* Header Typography: Single Line ZAI LIMITED */}
+        {/* Header Typography: Larger & Lower ZAI LIMITED */}
         <motion.div
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="flex items-baseline justify-center w-full mt-2"
+          className="flex items-baseline justify-center w-full mt-4 sm:mt-6"
         >
           <div className="flex items-baseline font-black tracking-[-0.04em] leading-none text-white select-none drop-shadow-[0_25px_50px_rgba(0,0,0,0.95)] whitespace-nowrap">
-            <span className="text-[32px] xs:text-[42px] sm:text-[80px] md:text-[110px] lg:text-[130px] font-black uppercase text-[#F5F1EB]">
+            <span className="text-[44px] xs:text-[52px] sm:text-[80px] md:text-[110px] lg:text-[130px] font-black uppercase text-[#F5F1EB]">
               ZAI
             </span>
-            <span className="w-1.5 h-1.5 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 rounded-full bg-[#FF5A2C] mx-1.5 sm:mx-3 md:mx-4 -translate-y-0.5 sm:-translate-y-2 inline-block shadow-lg shadow-[#FF5A2C]/60 shrink-0" />
-            <span className="text-[32px] xs:text-[42px] sm:text-[80px] md:text-[110px] lg:text-[130px] font-black uppercase text-white/90">
+            <span className="w-2 h-2 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 rounded-full bg-[#FF5A2C] mx-2 sm:mx-3 md:mx-4 -translate-y-1 sm:-translate-y-2 inline-block shadow-lg shadow-[#FF5A2C]/60 shrink-0" />
+            <span className="text-[44px] xs:text-[52px] sm:text-[80px] md:text-[110px] lg:text-[130px] font-black uppercase text-white/90">
               LIMITED
             </span>
           </div>
@@ -241,7 +241,7 @@ export const HeroSection: React.FC = () => {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-white/[0.03] border border-white/[0.06] hover:border-white/20 transition group"
+              className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-white/[0.03] border border-white/[0.06] hover:border-white/25 transition group"
             >
               <span className="text-white/80 group-hover:text-white transition">WHATSAPP 24/7</span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#FF5A2C] animate-pulse" />
@@ -260,7 +260,7 @@ export const HeroSection: React.FC = () => {
 
       {/* Marquee Ticker */}
       <div className="w-full shrink-0">
-        <MarqueeTicker speedMultiplier={0.5} duration={40} />
+        <MarqueeTicker />
       </div>
     </section>
   );
