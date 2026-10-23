@@ -2,7 +2,7 @@ import React from 'react';
 
 export const AboutSection: React.FC = () => {
   return (
-<section id="about" className="relative bg-[#F5F1EB] text-[#0E0E0F] py-20 md:py-32 border-t border-black/5">
+    <section id="about" className="relative bg-[#F5F1EB] text-[#0E0E0F] py-20 md:py-32 border-t border-black/5">
       <div className="mx-auto max-w-[1600px] px-5 md:px-10 grid lg:grid-cols-[1.15fr_0.85fr] gap-10 items-start">
         {/* Left Column: Founder Quote & Key Stats */}
         <div>
@@ -39,32 +39,14 @@ export const AboutSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Column: Narrative & Values */}
+        {/* Right Column: Values & Real Human Contact Guarantee */}
         <div className="lg:pt-8 md:lg:pt-10">
-          <div className="rounded-[24px] md:rounded-[28px] bg-white border border-black/5 p-6 md:p-8 md:md:p-10 shadow-sm">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#0E0E0F] text-[#F5F1EB] grid place-items-center font-black text-[18px] md:text-[24px]">
-              R
-            </div>
-
-            <h3 className="mt-5 md:mt-6 font-black text-[19px] md:text-[22px] tracking-tight leading-tight">
-              Rashid is a Licensed Tour Driver & Airbnb Superhost.
-            </h3>
-
-            <p className="mt-3 md:mt-4 text-[13px] md:text-[15px] leading-[1.6] opacity-70">
-              Based in Kilifi, Coastal Kenya. Rashid knows every shortcut from Moi International
-              Airport to Diani, Malindi, and Watamu. Flight tracked, fixed fare, no haggling.
-            </p>
-
-            <p className="mt-3 md:mt-4 text-[13px] md:text-[15px] leading-[1.6] opacity-70">
-              Zai Tours & Stays delivers reliable airport pickups, curated coastal Airbnbs,
-              and hotel-grade laundry — all handled by one tight, competent crew.
-            </p>
-
+          <div className="rounded-[24px] md:rounded-[28px] bg-white border border-black/5 p-6 md:p-8 md:p-10 shadow-sm">
             {/* Guiding Principles */}
-            <div className="mt-6 md:mt-8 grid grid-cols-1 gap-2.5 md:gap-3">
+            <div className="grid grid-cols-1 gap-2.5 md:gap-3">
               {[
                 { k: 'Punctual', v: 'We track flights & SGR times. Early is on time.' },
-                { k: 'Local', v: 'Kilifi born. We know shortcuts, not just highways.' },
+                { k: 'Local', v: 'Kilifi born. We know fastest routes, not just highways.' },
                 { k: 'Clean', v: 'Stays cleaned by us, laundry pressed by us. Same standard.' },
               ].map((pillar) => (
                 <div
